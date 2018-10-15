@@ -19,7 +19,10 @@ public class Mapa {
     }
 
     public void moverADerecha(Bomberman bomberman) {
-        posXBomberman=posXBomberman+1;
+        if (esVaciaADerecha())
+        {
+            posXBomberman=posXBomberman+1;
+        }
     }
 
     public boolean esVaciaADerecha() {
@@ -32,6 +35,10 @@ public class Mapa {
 
     public int posicionYBomberman() {
         return posYBomberman;
+    }
+
+    public boolean estaOcupadaConParedADerecha() {
+        return true;
     }
 }
 

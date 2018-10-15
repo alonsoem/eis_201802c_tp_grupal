@@ -1,5 +1,6 @@
 package gradle.cucumber;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -32,4 +33,25 @@ public class BasicStepdefs {
         assertEquals(2, mapa.posicionXBomberman());
         assertEquals(1, mapa.posicionYBomberman());
     }
+
+    @Given("^una celda ocupada por una pared a derecha$")
+    public boolean celdaConPared() throws Throwable {
+        return mapa.estaOcupadaConParedADerecha();
+    }
+
+    @When ("cuando se mueve a una celda ocupada por una pared")
+    public void moverseAUnaCeldaOcupada(){
+        Bomberman b = new Bomberman();
+        mapa.colocarBomberman(b);
+
+        b.moverADerecha(mapa);
+
+    }
+
+    @Then("^Bomberman NO cambia su posicion$")
+    public void bombermanNOCambiaSuPosicion(){
+        assertEquals(1, mapa.posicionXBomberman());
+        assertEquals(1, mapa.posicionYBomberman());
+    }
+
 }
