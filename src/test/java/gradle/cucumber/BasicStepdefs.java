@@ -9,9 +9,17 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BasicStepdefs {
     Mapa mapa;
+    Bomberman b;
+
     @Given("Un mapa")
     public void creoUnMapaVacio() throws Throwable {
         mapa = new Mapa();
+    }
+
+    @Given("Un bomberman en el mapa")
+    public void unBombermanEnElMapa() throws Throwable {
+        b = new Bomberman();
+        mapa.colocarBomberman(b);
     }
 
     @Given("una celda vacia a derecha")
@@ -21,11 +29,7 @@ public class BasicStepdefs {
 
     @When ("cuando se mueve a una celda vacia")
     public void moverseAUnaCelda(){
-        Bomberman b = new Bomberman();
-        mapa.colocarBomberman(b);
-
         b.moverADerecha(mapa);
-
     }
 
     @Then( "Bomberman cambia su posicion")
@@ -41,9 +45,6 @@ public class BasicStepdefs {
 
     @When ("cuando se mueve a una celda ocupada por una pared")
     public void moverseAUnaCeldaOcupada(){
-        Bomberman b = new Bomberman();
-        mapa.colocarBomberman(b);
-
         b.moverADerecha(mapa);
 
     }

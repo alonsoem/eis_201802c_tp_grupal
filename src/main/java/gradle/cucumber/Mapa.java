@@ -1,40 +1,48 @@
 package gradle.cucumber;
 
-public class Mapa {
-    int alto;
-    int ancho;
-    int posXBomberman;
-    int posYBomberman;
+import java.util.ArrayList;
+import java.util.List;
 
-    public void Mapa(){
-        alto=10;
-        ancho=10;
+public class Mapa {
+    Bomberman bomberman;
+    List<Celda> celdas = new ArrayList<Celda>();
+
+
+
+    public Mapa(){
+        celdas.add (new CeldaVacia(1,1));
+        celdas.add (new CeldaVacia(2,1));
     }
 
     public void colocarBomberman(Bomberman bomberman) {
-        posXBomberman=1;
-        posYBomberman=1;
-
-
+        bomberman.cambiarACelda (celdas.get(1));
+        bomberman=bomberman;
     }
 
     public void moverADerecha(Bomberman bomberman) {
         if (esVaciaADerecha())
         {
-            posXBomberman=posXBomberman+1;
+            bomberman.cambiarACelda(obtenerCeldaADerecha(bomberman.getCelda()));
         }
     }
 
     public boolean esVaciaADerecha() {
-        return true;
+
+        return obtenerCeldaADerecha(bomberman.getCelda()).esVacia(); //retorna una celda que esta a la derecha de Bomberman
+
+    }
+
+    private Celda obtenerCeldaADerecha(Celda celdaBomberman) {
+
+        return celdas.get(1);
     }
 
     public int posicionXBomberman() {
-        return posXBomberman;
+        return bomberman.getCelda().getPosX();
     }
 
     public int posicionYBomberman() {
-        return posYBomberman;
+        return bomberman.getCelda().getPosY();
     }
 
     public boolean estaOcupadaConParedADerecha() {
