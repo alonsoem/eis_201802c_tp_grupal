@@ -30,7 +30,7 @@ public class Celda {
     public boolean equals(Object obj) {
         CeldaPared p= (CeldaPared)obj;
 
-        return p.class().equals(this.class());
+        return p.getClass().equals(this.getClass());
 
     }
 }
