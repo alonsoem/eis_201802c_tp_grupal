@@ -1,24 +1,22 @@
 package gradle.cucumber;
 
-public class Bomberman {
+import com.sun.org.apache.xpath.internal.operations.Bool;
+import javafx.util.Pair;
 
-    private Celda celdaActual;
+public class Bomberman {
+    private Boolean estaVivo=true;
 
     public Bomberman()
+    {   //Crea un bomberman y seteo el mapa en el que esta ubicado y lo coloco
+    }
+
+    public void morir()
     {
-
+        estaVivo=false;
+    }
+    public Boolean estaVivo(){
+        return estaVivo;
     }
 
-    public void moverse(Celda celdaDestino)
-    {
-        celdaActual=celdaDestino;
-    }
 
-    public Celda getCeldaActual() {
-        return celdaActual;
-    }
-
-    public boolean estaMuerto() {
-        return celdaActual.esEnemigo();
-    }
 }
