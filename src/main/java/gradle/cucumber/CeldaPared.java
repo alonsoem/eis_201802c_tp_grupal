@@ -16,4 +16,5 @@ public class CeldaPared extends Celda {
         return new Celda(ubicacion);
     }
 
+
 }

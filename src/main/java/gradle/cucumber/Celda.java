@@ -26,4 +26,11 @@ public class Celda {
         return this;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        CeldaPared p= (CeldaPared)obj;
+
+        return p.class().equals(this.class());
+
+    }
 }
