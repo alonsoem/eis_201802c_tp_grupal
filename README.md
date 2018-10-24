@@ -12,12 +12,13 @@ Ejercitar la escritura de código en ambientes colaborativos utilizando una meto
 
 ### Integrantes
 
-Nro | Nombre | Legajo | Mail
-----|--------|--------|------
-1   | Enrique|123456  | alonso.em@gmail.com
-2   |        |        |
-3   |        |        |
-4   |        |        |
+Nro | Nombre          | Legajo | Mail
+----|-----------------|--------|------
+1   |Enrique Alonso   |32457   | alonso.em@gmail.com
+2   |Facundo Vigo     |23162   | facundovigo@gmail.com
+3   |Augusto Conti    |34730   | 
+4   |Octavio Gonzalez |23130   | 
+5   |Martin Kopecek   |32315   |
     
 ### Entrega
 
