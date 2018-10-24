@@ -13,7 +13,13 @@ public class CeldaPared extends Celda {
     }
     public Celda explotar()
     {
-        return new Celda(ubicacion);
+        return new Celda(miUbicacion);
+    }
+
+    @Override
+    public boolean equals(Object obj){
+
+        return obj.getClass().equals(this.getClass());
     }
 
 }

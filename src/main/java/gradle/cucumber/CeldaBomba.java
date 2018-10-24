@@ -13,7 +13,7 @@ public class CeldaBomba extends Celda{
     }
     public Celda explotar()
     {
-        return new Celda(ubicacion);
+        return new Celda(miUbicacion);
 
     }
 }

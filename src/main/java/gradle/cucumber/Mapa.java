@@ -74,22 +74,22 @@ public class Mapa {
 
     }
 
-    private void ondaExpansivaNS() {
+    private void ondaExpansivaEO() {
         int j;
 
         for (j = bombas.ubicacion().getValue()-3; j < bombas.ubicacion().getValue()+3+1; j++) {
-            celdas[bombas.ubicacion().getKey()][j]=celdas[bombas.ubicacion().getKey()][j].explotar();
+            celdas[j][bombas.ubicacion().getKey()]=celdas[j][bombas.ubicacion().getKey()].explotar();
         }
     }
-    private void ondaExpansivaEO() {
+    private void ondaExpansivaNS() {
         int i;
 
-        for (i = bombas.ubicacion().getKey()-3; i< bombas.ubicacion().getValue()+3+1; i++) {
+        for (i = bombas.ubicacion().getKey()-3; i< bombas.ubicacion().getKey()+3+1; i++) {
             celdas[bombas.ubicacion().getValue()][i]=celdas[bombas.ubicacion().getValue()][i].explotar();
         }
     }
 
-    public Celda obtenerCelda(int i, int j) {
-        return celdas[i][j];
+    public Celda obtenerCelda(int x, int y) {
+        return celdas[x][y];
     }
 }
