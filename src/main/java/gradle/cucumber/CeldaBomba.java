@@ -17,11 +17,5 @@ public class CeldaBomba extends Celda{
 
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        CeldaBomba p= (CeldaBomba)obj;
 
-        return p.getClass().equals(this.getClass());
-
-    }
 }

@@ -28,9 +28,7 @@ public class Celda {
 
     @Override
     public boolean equals(Object obj) {
-        Celda p= (Celda)obj;
 
         return p.getClass().equals(this.getClass());
-
     }
 }

@@ -17,11 +17,5 @@ public class CeldaPared extends Celda {
     }
 
 
-    @Override
-    public boolean equals(Object obj) {
-        CeldaPared p= (CeldaPared)obj;
 
-        return p.getClass().equals(this.getClass());
-
-    }
 }
