@@ -13,7 +13,7 @@ public class Mapa {
 
 
     public Mapa(int lado) {
-        //creo un mapa cuadrado de lado x lado celdas impares            OK
+        //creo un mapa cuadrado de lado x lado celdas impares
         celdas = new Celda[lado][lado];
         completarConCeldasVacias();
     }

@@ -90,4 +90,6 @@ public class BasicStepdefs {
         assertEquals(mapa.obtenerCelda(7,5),new Celda(7,5));
 
     }
+
+
 }
