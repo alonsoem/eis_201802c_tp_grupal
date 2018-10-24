@@ -16,4 +16,12 @@ public class CeldaBomba extends Celda{
         return new Celda(ubicacion);
 
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        CeldaBomba p= (CeldaBomba)obj;
+
+        return p.getClass().equals(this.getClass());
+
+    }
 }

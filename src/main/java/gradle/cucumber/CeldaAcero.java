@@ -16,4 +16,13 @@ public class CeldaAcero extends Celda {
     {
         return this;
     }
+
+
+    @Override
+    public boolean equals(Object obj) {
+        CeldaAcero p= (CeldaAcero)obj;
+
+        return p.getClass().equals(this.getClass());
+
+    }
 }

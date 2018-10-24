@@ -18,4 +18,6 @@ public class CeldaEnemigo extends Celda {
     {
         return new Celda(ubicacion);
     }
+
+
 }

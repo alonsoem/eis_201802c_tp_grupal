@@ -28,7 +28,7 @@ public class Celda {
 
     @Override
     public boolean equals(Object obj) {
-        CeldaPared p= (CeldaPared)obj;
+        Celda p= (Celda)obj;
 
         return p.getClass().equals(this.getClass());
 
