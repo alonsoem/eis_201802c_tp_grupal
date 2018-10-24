@@ -2,8 +2,8 @@ package gradle.cucumber;
 
 import javafx.util.Pair;
 
-public class CeldaPared extends Celda {
-    public CeldaPared(int x, int y) {
+public class CeldaAcero extends Celda {
+    public CeldaAcero(int x, int y) {
         super(x,y);
     }
 
@@ -11,9 +11,9 @@ public class CeldaPared extends Celda {
     {
         return mapa.ubicacionBomberman();
     }
+
     public Celda explotar()
     {
-        return new Celda(ubicacion);
+        return this;
     }
-
 }

@@ -1,17 +1,21 @@
 package gradle.cucumber;
 
+import javafx.util.Pair;
+
 public class CeldaEnemigo extends Celda {
 
-    public CeldaEnemigo()
+    public CeldaEnemigo(int x, int y)
     {
-
-    }
-    public boolean esVacia()
-    {
-        return true; //Esto esta como el orto, entre otras cosas ;-(
+        super (x,y);
     }
 
-    public boolean esEnemigo() {
-        return true;
+    public Pair<Integer, Integer> ocupar(Mapa mapa){
+        mapa.obtenerBomberman().morir();
+        return new Pair<>(mapa.ubicacionBomberman().getKey(),mapa.ubicacionBomberman().getValue());
+
+    }
+    public Celda explotar()
+    {
+        return new Celda(ubicacion);
     }
 }
