@@ -29,6 +29,6 @@ public class Celda {
     @Override
     public boolean equals(Object obj) {
 
-        return p.getClass().equals(this.getClass());
+        return obj.getClass().equals(this.getClass());
     }
 }
