@@ -16,10 +16,10 @@ Nro | Nombre          | Legajo | Mail
 ----|-----------------|--------|------
 1   |Enrique Alonso   |32457   | alonso.em@gmail.com
 2   |Facundo Vigo     |23162   | facundovigo@gmail.com
-3   |Augusto Conti    |34730   | 
-4   |Octavio Gonzalez |23130   | 
-5   |Martin Kopecek   |32315   |
-    
+3   |Augusto Conti    |34730   | augustoconti10@gmail.com
+4   |Octavio Gonzalez |23130   | gonzalezoctavio5@gmail.com
+5   |Martin Kopecek   |32315   | kopecek.mk@gmail.com,
+    	
 ### Entrega
 
 24 / 10 / 2018
